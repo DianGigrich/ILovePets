@@ -3,15 +3,15 @@ import {Link,useNavigate} from 'react-router-dom'
 
 export default function Navbar() {
     const navigate = useNavigate()
-    const logoutFunc = ()=>{
-        props.handleLogout()
-        navigate("/login")
-      }
+    // const logoutFunc = ()=>{
+    //     props.handleLogout()
+    //     navigate("/login")
+    //   }
       return (
         <div>
             <Link to ="/">Home</Link>
-            {props.isLoggedIn?<Link to ="/Profile">Profile</Link>:null}
-            {props.isLoggedIn?<button onClick={logoutFunc}>Logout</button>:<Link to="/login">login</Link>}
+            <Link to ="/Profile">Profile</Link>
+
         </div>
     )
 }
