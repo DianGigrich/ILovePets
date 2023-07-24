@@ -3,6 +3,9 @@ import Home from "./pages/Home";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Profile from "./pages/PetPage";
 import Navbar from "./components/NavBar";
+import Container from 'react-bootstrap/Container';
+import './App.css';
+
 
 function App() {
   // const [userId, setUserId] = useState(0)
@@ -61,6 +64,10 @@ function App() {
   // }
   return (
     <div className="App">
+      <Container>
+        <h1>I Love Pets!</h1>
+        <h2>Petsitting made easy</h2>
+      </Container>
       <Router>
         <Navbar/>
         <Routes>
