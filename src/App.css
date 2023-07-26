@@ -2,6 +2,8 @@
   text-align: center;
 } */
 
-h1 {
-  border: black solid 2px;
+.banner {
+  border: black solid 4px;
 }
+
+

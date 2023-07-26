@@ -1,21 +1,19 @@
-import React from 'react'
-// import {Link,useNavigate} from 'react-router-dom'
-import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
+export default function Navbar(props) {
 
-function Navigation() {
     return (
-        <Container>
-            <Nav variant="pills" className="me-auto">
-                <Nav.Link href="/" >Home!</Nav.Link>
-                <Nav.Link href="profile" >Profile!</Nav.Link>
-
-            </Nav>
-
-        </Container>
-
-    );
+        <nav className="navbar navbar-inverse">
+            <div className="container-fluid">
+                <div className="navbar-header">
+                    <a className="navbar-brand">I love Pets!</a>
+                </div>
+                <ul className="nav navbar-nav">
+                    <Link to="/">Home</Link>
+                    <Link to="/profile">Profile</Link>
+                </ul>
+            </div>
+        </nav>
+    )
 }
-
-export default Navigation;

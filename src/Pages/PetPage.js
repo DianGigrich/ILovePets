@@ -1,15 +1,22 @@
 import React from 'react';
-// import {useNavigate} from "react-router-dom";
-// import API from "../../utils/API";
+import Pet from '../components/Pet';
 
 export default function Profile(props) {
+  return (
+    <div className="container">
+      <section className="row">
+        <div className="col">
+        <Pet/>
+        </div>
+        <div className="col">
+        <Pet/>
+        </div>
+        <div className="col">
+        <Pet/>
+        </div>
 
-      return (
-        <>
-            <div className="Profile">
-            <h1>Welcome!</h1>
-            </div>
+      </section>
 
-        </>
-      )
-    }
+    </div>
+  );
+}
